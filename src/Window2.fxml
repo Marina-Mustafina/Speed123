@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1250.0" style="-fx-background-color: #FFA6D1; -fx-border-color: #EBBCFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_2">
+   <center>
+      <TabPane prefHeight="558.0" prefWidth="880.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab style="-fx-background-color: white;" text="Работа Бензоколонок">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="507.0" prefWidth="926.0" style="-fx-background-color: #EBBCFF;">
+                     <children>
+                        <GridPane gridLinesVisible="true" prefHeight="518.0" prefWidth="926.0" style="-fx-background-color: #EBBCFF;">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EBBCFF;">
+                                 <children>
+                                    <Label layoutX="2.0" layoutY="-2.0" prefHeight="28.0" prefWidth="332.0" text="Speed Without Limits">
+                                       <font>
+                                          <Font name="Times New Roman" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tx1" alignment="CENTER" editable="false" layoutX="5.0" layoutY="50.0" prefHeight="40.0" prefWidth="250.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fx:id="car1" disable="true" fitHeight="146.0" fitWidth="250.0" layoutX="5.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/car.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ProgressBar fx:id="pb1" layoutX="179.0" layoutY="134.0" prefWidth="200.0" progress="0.0" rotate="-90.0">
+                                       <effect>
+                                          <ColorAdjust hue="-0.41" saturation="-0.05" />
+                                       </effect>
+                                    </ProgressBar>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EBBCFF;" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label layoutX="4.0" layoutY="-2.0" prefHeight="28.0" prefWidth="332.0" text="Speed Without Limits">
+                                       <font>
+                                          <Font name="Times New Roman" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tx2" alignment="CENTER" editable="false" layoutX="7.0" layoutY="50.0" prefHeight="40.0" prefWidth="250.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fx:id="car2" fitHeight="146.0" fitWidth="250.0" layoutX="7.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/car.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="75.0" fitWidth="76.0" layoutX="215.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/cat.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ProgressBar fx:id="pb2" layoutX="182.0" layoutY="135.0" prefWidth="200.0" progress="0.0" rotate="-90.0">
+                                       <effect>
+                                          <ColorAdjust hue="-0.41" saturation="-0.05" />
+                                       </effect>
+                                    </ProgressBar>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EBBCFF;" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="1.0" layoutY="-1.0" prefHeight="28.0" prefWidth="332.0" text="Speed Without Limits">
+                                       <font>
+                                          <Font name="Times New Roman" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tx4" alignment="CENTER" editable="false" layoutX="4.0" layoutY="51.0" prefHeight="40.0" prefWidth="250.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fx:id="car4" fitHeight="146.0" fitWidth="250.0" layoutX="4.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/car.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="75.0" fitWidth="76.0" layoutX="211.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/cat.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ProgressBar fx:id="pb4" layoutX="178.0" layoutY="137.0" prefWidth="200.0" progress="0.0" rotate="-90.0">
+                                       <effect>
+                                          <ColorAdjust hue="-0.41" saturation="-0.05" />
+                                       </effect>
+                                    </ProgressBar>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="276.0" prefWidth="306.0" style="-fx-background-color: #EBBCFF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="3.0" layoutY="-1.0" prefHeight="28.0" prefWidth="332.0" text="Speed Without Limits">
+                                       <font>
+                                          <Font name="Times New Roman" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tx5" alignment="CENTER" editable="false" layoutX="6.0" layoutY="51.0" prefHeight="40.0" prefWidth="250.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fx:id="car5" fitHeight="146.0" fitWidth="250.0" layoutX="6.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/car.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="75.0" fitWidth="76.0" layoutX="214.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/cat.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ProgressBar fx:id="pb5" layoutX="181.0" layoutY="137.0" prefWidth="200.0" progress="0.0" rotate="-90.0">
+                                       <effect>
+                                          <ColorAdjust hue="-0.41" saturation="-0.05" />
+                                       </effect>
+                                    </ProgressBar>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EBBCFF;" GridPane.columnIndex="2">
+                                 <children>
+                                    <Label layoutX="5.0" layoutY="3.0" prefHeight="28.0" prefWidth="332.0" text="Speed Without Limits">
+                                       <font>
+                                          <Font name="Times New Roman" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tx3" alignment="CENTER" editable="false" layoutX="9.0" layoutY="55.0" prefHeight="40.0" prefWidth="250.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fx:id="car3" fitHeight="146.0" fitWidth="250.0" layoutX="5.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/car.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ProgressBar fx:id="pb3" layoutX="180.0" layoutY="137.0" prefWidth="200.0" progress="0.0" rotate="-90.0">
+                                       <effect>
+                                          <ColorAdjust hue="-0.41" saturation="-0.05" />
+                                       </effect>
+                                    </ProgressBar>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="5.0" prefHeight="28.0" prefWidth="332.0" text="Speed Without Limits">
+                                       <font>
+                                          <Font name="Times New Roman" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tx6" alignment="CENTER" editable="false" layoutX="5.0" layoutY="49.0" prefHeight="40.0" prefWidth="250.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fx:id="car6" fitHeight="146.0" fitWidth="250.0" layoutX="5.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../bin/car.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ProgressBar fx:id="pb6" layoutX="187.0" layoutY="137.0" prefWidth="200.0" progress="0.0" rotate="-90.0">
+                                       <effect>
+                                          <ColorAdjust hue="-0.41" saturation="-0.05" />
+                                       </effect>
+                                    </ProgressBar>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </GridPane>
+                        <ProgressBar fx:id="pb7" layoutX="909.0" layoutY="119.0" prefHeight="221.0" prefWidth="376.0" progress="0.0" rotate="-90.0" />
+                        <Label layoutX="1046.0" layoutY="7.0" text="Резервуар">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="999.0" layoutY="424.0" text="Количество: ">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1132.0" layoutY="424.0" prefHeight="28.0" prefWidth="64.0" text="1000">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1184.0" layoutY="424.0" text="л">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button001" layoutX="971.0" layoutY="452.0" mnemonicParsing="false" onAction="#onClickFuel" style="-fx-background-color: white;" text="Пополнить резервуар">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

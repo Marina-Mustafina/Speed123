@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="600.0" style="-fx-background-color: #EBBCFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea editable="false" layoutX="28.0" layoutY="55.0" prefHeight="209.0" prefWidth="544.0" text="                        Сведения:&#10;Тема: Система Заправки автомобилей&#10;Создатель СРВ: Мустафина Марина &#10;Факультет: ИИМРТ&#10;Группа: ЭАС-412&#10;">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="28.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextArea>
+   </children>
+</Pane>
